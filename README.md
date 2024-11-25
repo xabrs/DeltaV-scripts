@@ -1,4 +1,4 @@
-1. PowerShell GUI for DvCHDump (DeltaV Continuous Historian dump utility)
+1. PowerShell GUI for DvCHDump (DeltaV Continuous Historian dump utility).
 
    ![Preview](DeltaVCH2CSV.png)
    
