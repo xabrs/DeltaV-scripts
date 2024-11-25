@@ -3,7 +3,7 @@
     Export tags historian to CSV
 
 .DESCRIPTION
-    Use DvCHDump from "C:\DeltaV\DVUtilities\DvCHDump.exe
+    Is used DvCHDump from "C:\DeltaV\DVUtilities\DvCHDump.exe
 
 .AUTHOR
     https://github.com/xabrs
@@ -49,8 +49,6 @@ function StartGUI(){
   $endDate.CustomFormat = $dtFormat
   $form.Controls.Add($endDate)
 
-
-  # Поле ввода числа (Interval)
   $intervalLabel = New-Object System.Windows.Forms.Label
   $intervalLabel.Text = "Interval:"
   $intervalLabel.Top = 140
@@ -145,7 +143,7 @@ function StartGUI(){
       } else {
         for($i=0;$i -lt $resultArray.Count;$i++){
           if ($resultArray[$i][0] -eq $array[$i][0]){
-            $resultArray[$i]+=$array[$i][2..($array.Length - 1)]
+            $resultArray[$i]+=$array[$i][2..($array[$i].Length - 1)]
           }
         }
       }
